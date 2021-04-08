@@ -503,7 +503,10 @@ ol {
 }
 
 .process-step p {
+	overflow: hidden;
 	margin-bottom: 3px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 /*.process-step:after {*/
