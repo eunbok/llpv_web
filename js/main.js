@@ -137,8 +137,8 @@ $(window).on('load', function () {
     // autoPlay: 5000
   });
 
-  //자동 새로고침
-  setTimeout("location.reload()",60000);
+  //자동 새로고침 10분
+  setTimeout("location.reload()",60000 * 10);
 
 })(jQuery);
 
