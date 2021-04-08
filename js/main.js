@@ -115,9 +115,7 @@ $(window).on('load', function () {
       }
     },
     error: function (request, status, error) {
-      var msg = "ERROR : " + request.status + "<br>"
-      msg += +"내용 : " + request.responseText + "<br>" + error;
-      console.log(msg);
+      console.log(error);
 
       var tag = "";
       tag += "<div class=\"carousel-cell\">\n";
