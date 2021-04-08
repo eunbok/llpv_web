@@ -80,6 +80,7 @@ $(window).on('load', function () {
   });
 
   $.ajax({
+    crossOrigin: true,
     type: "POST",
     url: "http://www.llload.com:9995/rank",
     beforeSend: function (xhr) {
