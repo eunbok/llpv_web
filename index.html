@@ -66,27 +66,24 @@
 
 
 <!-- Hero section -->
-<section class="hero-section">
+<section class="hero-section" id="hero-section" data-section="hero-section">
   <div class="container">
     <div class="row">
       <div class="col-md-6 hero-text">
         <h2>PC 사용시간 <span>관리</span> <br>프로그램</h2>
         <h4>for Windows</h4>
-        <!--					<form class="hero-subscribe-from">-->
         <a href="https://github.com/eunbok/llpv">
           <button>github.com</button>
         </a>
         <a href="https://github.com/eunbok/llpv/archive/refs/heads/main.zip">
           <button class="site-btn sb-gradients">Download</button>
         </a>
-        <!--					</form>-->
       </div>
       <div class="col-md-6">
         <div class="process-step">
           <div class="carousel" data-flickity='{ "autoPlay": true }'>
           </div>
         </div>
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <div class="share">
           <div class="addthis_inline_share_toolbox_5x0b"></div>
         </div>
@@ -95,6 +92,79 @@
   </div>
 </section>
 <!-- Hero section end -->
+
+<!-- About section -->
+<section class="about-section spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-6 about-text">
+        <h2>llpv (llProcessView)</h2>
+        <h5>활성화된 프로그램의 사용시간을 측정하여 컴퓨터를 생산적으로 사용할 수 있도록 도와주는 프로그램입니다.</h5>
+        <p>현재는 Windows에서 java 프로그램으로 동작하며 jna 라이브러리를 사용하여 활성화된 프로그램을 가져오고 있습니다.
+          향후 계획은 여러 Windows 뿐만아니라 운영체제 지원과 데이터를 기반으로 다양한 기능을 구현할 예정입니다.
+        </p>
+        <a href="#hero-section" class="site-btn sb-gradients sbg-line mt-5">Get Started</a>
+      </div>
+    </div>
+    <div class="about-img">
+      <img src="img/about-img.png" alt="">
+    </div>
+  </div>
+</section>
+<!-- About section end -->
+
+<!-- Features section -->
+<section class="features-section spad gradient-bg">
+  <div class="container text-white">
+    <div class="section-title text-center">
+      <h2>기능</h2>
+      <p>순위, 검색, 제어, 알람, 메모 기능이 있고 홈페이지에서 사용자들의 실시간 프로세스 순위를 볼 수 있습니다.</p>
+    </div>
+    <div class="row">
+      <!-- feature -->
+      <div class="col-md-6 col-lg-4 feature">
+        <div class="feature-content">
+          <h4>순위</h4>
+          <p>프로세스명 또는 프로그램 제목 별 사용시간과 순위를 알려줍니다.</p>
+          <img src="img/feature1.PNG">
+        </div>
+      </div>
+      <!-- feature -->
+      <div class="col-md-6 col-lg-4 feature">
+        <div class="feature-content">
+          <h4>검색</h4>
+          <p>프로세스명 또는 프로그램 제목으로 데이터를 검색할 수 있습니다. 검색 조건은 대소문자 구분없이 두가지 필드를 검색하며 한 글자라도 포함되면 검색합니다.</p>
+          <img src="img/feature2.PNG">
+        </div>
+      </div>
+      <!-- feature -->
+      <div class="col-md-6 col-lg-4 feature">
+        <div class="feature-content">
+          <h4>제한</h4>
+          <p>프로그램 제한시간을 설정할 수 있습니다. 제한시간이 되기전에 알림을 주고 제한시간을 넘어가면 해당 프로그램이 강제 종료됩니다.</p>
+          <img src="img/feature3.PNG">
+        </div>
+      </div>
+      <!-- feature -->
+      <div class="col-md-6 col-lg-4 feature">
+        <div class="feature-content">
+          <h4>알람</h4>
+          <p>지정한 알림 시간만큼 컴퓨터를 사용하면 윈도우 화면잠금이 되고 휴식시간이 지나면 트레이 알림이 옵니다.</p>
+          <img src="img/feature4.PNG">
+        </div>
+      </div>
+      <!-- feature -->
+      <div class="col-md-6 col-lg-4 feature">
+        <div class="feature-content">
+          <h4>메모</h4>
+          <p>간단한 메모 기능입니다. 한줄 한줄 작성할 때마다 왼쪽 공간에 시간이 기록됩니다. (자동저장 시간 10초)</p>
+          <img src="img/feature5.PNG">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Features section end -->
 
 
 <!-- Footer section -->
