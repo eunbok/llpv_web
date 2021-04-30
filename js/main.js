@@ -87,31 +87,26 @@ $(window).on('load', function () {
       xhr.setRequestHeader("Content-type", "application/json");
     },
     dataType: "json",
-    // data: "",
     success: function (data) {
-
-      console.log(data);
       for (var i = 0; i < data.length; i++) {
         var key = Object.keys(data[i]);
         var tag = "";
         tag += "<div class=\"carousel-cell\">\n";
         tag += "<h4>" + key + "</h4>\n";
         tag += "<hr>\n"
-        
-        if( data[i][Object.keys(data[i])].length == 0){
+
+        if (data[i][Object.keys(data[i])].length == 0) {
           tag += "<p>데이터가 없습니다.</p>\n";
-        }else{
+        } else {
           for (var j = 0; j < data[i][Object.keys(data[i])].length; j++) {
             var jo = data[i][Object.keys(data[i])][j];
-            tag += "<p>" + (j + 1) + ". " + jo.run_file + "&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;" + jo.run_sec
-                + "</p>\n";
-          }  
+            tag += "<p>" + (j + 1) + ". " + jo.run_file + "</p>\n";
+          }
         }
-        
-        
+
         tag += "</div>\n"
         var $cellElems = $(tag);
-        $('.carousel').flickity( 'insert', $cellElems, i);
+        $('.carousel').flickity('insert', $cellElems, i);
       }
     },
     error: function (request, status, error) {
@@ -138,7 +133,7 @@ $(window).on('load', function () {
   });
 
   //자동 새로고침 10분
-  setTimeout("location.reload()",60000 * 10);
+  setTimeout("location.reload()", 60000 * 10);
 
 })(jQuery);
 
