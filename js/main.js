@@ -82,7 +82,7 @@ $(window).on('load', function () {
   $.ajax({
     crossOrigin: true,
     type: "POST",
-    url: "https://www.llload.com:9995/rank",
+    url: "https://llload.com:9995/rank",
     beforeSend: function (xhr) {
       xhr.setRequestHeader("Content-type", "application/json");
     },
